@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "top 1500 companies scraping"
+version = "0.1.0"
+description = "Scraping das 1500 maiores empresas do Brasil, de acordo com o ranking Empresas mais do Estadão."
+authors = ["Lorenzo Brasil"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.2"
+numpy = "^1.26.4"
+requests = "^2.31.0"
+bs4 = "^0.0.2"
+openpyxl = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start_scraping = "top1500companies_scraping.main"
